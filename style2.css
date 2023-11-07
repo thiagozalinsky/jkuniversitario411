@@ -1,0 +1,119 @@
+/* Estilos padrão para telas maiores (desktop) */
+body {
+    font-size: 18px;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.conteudo {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.barra-lateral {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para telas menores (tablets) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 10px;
+    }
+
+    .barra-lateral {
+        flex: 1;
+        padding: 10px;
+    }
+}
+
+/* Estilos para telas ainda menores (smartphones) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 5px;
+    }
+
+    .barra-lateral {
+        flex: 1;
+        padding: 5px;
+    }
+}
