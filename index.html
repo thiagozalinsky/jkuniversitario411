@@ -227,7 +227,7 @@
 							<div class="col-6 col-12-medium">
 
 								<!-- Contact Form -->
-									<section>
+									<!--<section>
 										<form method="post" action="#">
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
@@ -247,7 +247,50 @@
 												</div>
 											</div>
 										</form>
-									</section>
+									</section> -->
+								<!--Nova inicio-->
+								<section>
+    <form method="post" action="#">
+        <!-- Use action="#" para que o formulário não redirecione para uma nova página -->
+        <div class="row gtr-50">
+            <div class="col-6 col-12-small">
+                <input type="text" name="name" id="contact-name" placeholder="Nome" />
+            </div>
+            <div class="col-6 col-12-small">
+                <input type="text" name="phone" id="contact-phone" placeholder="Número de telefone" />
+            </div>
+            <div class="col-12">
+                <textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><input type="button" class="style1" value="Enviar" onclick="enviarWhatsapp()" /></li>
+                    <li><input type="reset" class="style2" value="Resetar" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function enviarWhatsapp() {
+            // Coleta dos dados do formulário
+            const nome = document.getElementById('contact-name').value;
+            const telefone = document.getElementById('contact-phone').value;
+            const mensagem = document.getElementById('contact-message').value;
+
+            // Formatação da mensagem para URL
+            const mensagemFormatada = `Olá, meu nome é ${nome}. ${mensagem}`;
+
+            // Montagem da URL do WhatsApp
+            const urlWhatsapp = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(mensagemFormatada)}`;
+
+            // Redirecionamento para a URL do WhatsApp
+            window.location.href = urlWhatsapp;
+        }
+    </script>
+</section>
+								<!--Nova fim-->
+						
 
 							</div>
 							<div class="col-6 col-12-medium">
