@@ -250,46 +250,41 @@
 									</section> -->
 								<!--Nova inicio-->
 								<section>
-    <form method="post" action="#">
-        <!-- Use action="#" para que o formulário não redirecione para uma nova página -->
-        <div class="row gtr-50">
-            <div class="col-6 col-12-small">
-               <input type="text" name="name" id="contact-name" placeholder="Digite seu nome" /> 
-            </div>
-            <div class="col-6 col-12-small">
-                 <!--<input type="text" name="phone" id="contact-phone" placeholder="Número de telefone" />-->
-            </div>
-            <div class="col-12">
-                <textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
-            </div>
-            <div class="col-12">
-                <ul class="actions">
-                    <li><input type="button" class="style1" value="Enviar" target="_blank" onclick="enviarWhatsapp()" /></li>
-                    <li><input type="reset" class="style2" value="Resetar" /></li>
-                </ul>
-            </div>
-        </div>
-    </form>
-
-    <script>
-        function enviarWhatsapp() {
-            // Coleta dos dados do formulário
-            const nome = document.getElementById('contact-name').value;
-            const telefoneFixo = '555134449849'; // Substitua com o número de telefone fixo desejado
-            const mensagem = document.getElementById('contact-message').value;
-
-            // Formatação da mensagem para URL
-            const mensagemFormatada = `Olá, meu nome é ${nome}. ${mensagem}`;
-
-            // Montagem da URL do WhatsApp com o número fixo
-            const urlWhatsapp = `https://api.whatsapp.com/send?phone=${telefoneFixo}&text=${encodeURIComponent(mensagemFormatada)}`;
-
-            // Redirecionamento para a URL do WhatsApp
-            window.location.href = urlWhatsapp;
-        }
-    </script>
-</section>
-
+									<form method="post" action="#">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input type="text" name="name" id="contact-name" placeholder="Digite seu nome" /> 
+											</div>
+											<div class="col-6 col-12-small">
+												<!-- <input type="text" name="phone" id="contact-phone" placeholder="Número de telefone" /> -->
+											</div>
+											<div class="col-12">
+												<textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="button" class="style1" value="Enviar" onclick="enviarWhatsapp()" /></li>
+													<li><input type="reset" class="style2" value="Resetar" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								
+									<script>
+										function enviarWhatsapp() {
+											const nome = document.getElementById('contact-name').value;
+											const telefoneFixo = '555134449849'; // Substitua com o número de telefone fixo desejado
+											const mensagem = document.getElementById('contact-message').value;
+								
+											const mensagemFormatada = `Olá, meu nome é ${nome}. ${mensagem}`;
+											const urlWhatsapp = `https://api.whatsapp.com/send?phone=${telefoneFixo}&text=${encodeURIComponent(mensagemFormatada)}`;
+								
+											// Abre a URL do WhatsApp em uma nova janela ou guia
+											window.open(urlWhatsapp, '_blank');
+										}
+									</script>
+								</section>
+								
 								<!--Nova fim-->
 						
 
