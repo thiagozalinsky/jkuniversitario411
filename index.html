@@ -18,6 +18,23 @@
         enable_page_level_ads: true
     });
 </script>
+	 <script src="https://cdn.jsdelivr.net/npm/lighthouse-badge/dist/lighthouse-badge.min.js"></script>
+    <script>
+        // Example of using Lighthouse Badge to show performance score
+        const badge = new LighthouseBadge({
+            url: 'https://example.com',
+            strategy: 'mobile'
+        });
+        document.body.appendChild(badge);
+    </script>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX-X');
+    </script>
 
 	</head>
 	<body class="homepage is-preload">
