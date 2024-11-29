@@ -1,19 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <head>
-    <title>Jk Universitário</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="JK Universitário - Aluguéis de Apartamentos, JK's, Quartos e Kitnets próximos ao campus da UFRGS (Campus do Vale).">
+    <meta name="keywords" content="aluguel, universitários, UFRGS, JK, apartamentos, quartos, kitnets">
+    <meta name="author" content="Thiago Leonardo">
+    <title>JK Universitário</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -24,82 +18,114 @@
         });
     </script>
 
-    <!-- Estilos personalizados -->
-    <style>
-        /* Botão do WhatsApp */
-        #whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background-color: #25d366;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        #whatsapp-button img {
-            width: 35px;
-            height: 35px;
-        }
-    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X'); // Substitua pelo seu ID do Google Analytics
+    </script>
 </head>
 <body class="homepage is-preload">
-    <div id="page-wrapper">
 
+    <!-- Página Principal -->
+    <div id="page-wrapper">
+        
         <!-- Header -->
         <section id="header" class="wrapper">
             <div id="logo">
-                <h1><a href="index.html">Jk Universitário</a></h1>
+                <h1><a href="index.html">JK Universitário</a></h1>
                 <p>Aluguel para universitários</p>
             </div>
+
+            <!-- Navegação -->
             <nav id="nav">
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="#">Acomodações</a>
+                        <ul>
+                            <li>
+                                <a href="#">Apartamentos</a>
+                                <ul>
+                                    <li><a href="./fotos/ap1.html" target="_blank">Apartamento 1</a></li>
+                                    <li><a href="./fotos/ap2.html" target="_blank">Apartamento 2</a></li>
+                                    <li><a href="./fotos/ap3.html" target="_blank">Apartamento 3</a></li>
+                                    <li><a href="./fotos/ap4.html" target="_blank">Apartamento 4</a></li>
+                                    <li><a href="./fotos/ap5.html" target="_blank">Apartamento 5</a></li>
+                                    <li><a href="./fotos/ap6.html" target="_blank">Apartamento 6</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Quartos</a>
+                                <ul>
+                                    <li><a href="./fotos/quarto1.html" target="_blank">Quarto 1</a></li>
+                                    <li><a href="./fotos/quarto2.html" target="_blank">Quarto 2</a></li>
+                                    <li><a href="./fotos/quarto3.html" target="_blank">Quarto 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">JK's</a>
+                                <ul>
+                                    <li><a href="./fotos/jk1.html" target="_blank">JK 1</a></li>
+                                    <li><a href="./fotos/jk2.html" target="_blank">JK 2</a></li>
+                                    <li><a href="./fotos/jk3.html" target="_blank">JK 3</a></li>
+                                    <li><a href="./fotos/jk4.html" target="_blank">JK 4</a></li>
+                                    <li><a href="./fotos/jk5.html" target="_blank">JK 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./fotos/kitnet1.html" target="_blank">Kitnet's</a></li>
+                            <li>
+                                <a href="#">Espaço Compartilhado</a>
+                                <ul>
+                                    <li><a href="./fotos/kitchen.html" target="_blank">Cozinha Compartilhada</a></li>
+                                    <li><a href="./fotos/predioecorredor.html" target="_blank">Corredor Prédio Rosa</a></li>
+                                    <li><a href="./fotos/arborizado.html" target="_blank">Área Arborizada</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </section>
 
-        <!-- Conteúdo Principal -->
-        <section id="main" class="wrapper">
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1">
+            <div class="title">Bem-vindo(a)</div>
             <div class="container">
-                <header class="major">
-                    <h2>Bem-vindo ao Jk Universitário</h2>
-                    <p>Aluguel prático e acessível para estudantes da UFRGS.</p>
-                </header>
+                <p class="style1">Aluguéis de Apartamentos, JK's, Quartos e Kitnets próximos ao Campus do Vale da UFRGS.</p>
+                <p class="style2">
+                    Localizados a menos de 10 minutos do <a href="https://jkuniversitario.netlify.app" class="nobr">Campus do Vale</a>.
+                </p>
+                <p class="style3">A JK Universitário oferece acomodações semi-mobiliadas com ampla área de uso comum, lavanderia e internet Wi-Fi.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button style3 large">Fotos</a></li>
+                </ul>
             </div>
         </section>
 
-        <!-- Anúncios do Google AdSense -->
+        <!-- Google AdSense Block -->
         <section>
-            <div class="container">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-7053654011284998"
-                     data-ad-slot="1234567890"
-                     data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7053654011284998"
+                 data-ad-slot="9876543210"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </section>
 
         <!-- Footer -->
         <section id="footer" class="wrapper">
-            <div class="container">
-                <p>&copy; Jk Universitário. Todos os direitos reservados.</p>
-            </div>
+            <div class="title">Consulte Disponibilidade</div>
+            <p>Entre em contato para mais informações sobre nossas acomodações.</p>
+            <ul class="actions">
+                <li><a href="https://api.whatsapp.com/send?phone=555134449849" class="button style1 large" target="_blank">Fale Conosco</a></li>
+            </ul>
         </section>
-    </div>
 
-    <!-- Botão do WhatsApp -->
-    <a id="whatsapp-button" href="https://wa.me/5551999999999" target="_blank" title="Fale conosco no WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+    </div>
 </body>
 </html>
