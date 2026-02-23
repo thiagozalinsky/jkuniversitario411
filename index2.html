@@ -1,202 +1,168 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Jk Universitário</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <title>Jk Universitário</title>
 
-	<style>
-		/* ===== HEADER COM IMAGEM ===== */
-		#header {
-			background-image: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1920&q=80");
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			position: relative;
-			padding: 120px 0;
-		}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="google-adsense-account" content="G-5Q60TD3P18">
 
-		#header::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,0.55);
-			z-index: 1;
-		}
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-		#header .wrapper,
-		#logo,
-		#nav {
-			position: relative;
-			z-index: 2;
-		}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-		#logo h1 a,
-		#logo p,
-		#nav ul li a {
-			color: #ffffff !important;
-		}
+        /* ===== HEADER COM IMAGEM ===== */
+        #header {
+            background-image: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1920&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
 
-		/* ===== CARDS ===== */
-		.cards {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 30px;
-			justify-content: center;
-			margin-top: 40px;
-		}
+        #header::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
+            top: 0;
+            left: 0;
+        }
 
-		.card {
-			width: 280px;
-			border-radius: 10px;
-			overflow: hidden;
-			box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-			background: #fff;
-			text-align: center;
-		}
+        #header .content {
+            position: relative;
+            z-index: 2;
+        }
 
-		.card img {
-			width: 100%;
-			height: 180px;
-			object-fit: cover;
-		}
+        #header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
 
-		.card h3 {
-			padding: 15px 0 5px;
-		}
+        #header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
 
-		.card a {
-			display: inline-block;
-			margin: 15px;
-			padding: 10px 20px;
-			background: #2c7be5;
-			color: #fff;
-			border-radius: 5px;
-			text-decoration: none;
-		}
-	</style>
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background: #25D366;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* ===== SEÇÕES ===== */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media(max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 
-<body class="homepage is-preload">
-<div id="page-wrapper">
+<body>
 
-	<!-- HEADER -->
-	<section id="header" class="wrapper">
-		<div id="logo">
-			<h1><a href="index.html">Jk Universitário</a></h1>
-			<p>Aluguel para universitários</p>
-		</div>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="content">
+            <h1>Jk Universitário</h1>
+            <p>Aluguel para universitários</p>
+            <a href="https://wa.me/5551999999999" class="btn">Falar no WhatsApp</a>
+        </div>
+    </header>
 
-		<nav id="nav">
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li><a href="#acomodacoes">Acomodações</a></li>
-				<li><a href="#contato">Contato</a></li>
-			</ul>
-		</nav>
-	</section>
+    <!-- ===== ACOMODAÇÕES ===== -->
+    <section>
+        <h2>Nossas Acomodações</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80" alt="Apartamento 1">
+                <h3>JK Individual</h3>
+                <p>Ideal para estudantes. Próximo à universidade.</p>
+            </div>
 
-	<!-- INTRO -->
-	<section id="intro" class="wrapper style1">
-		<div class="title">Bem-vindo(a)</div>
-		<div class="container">
-			<p class="style2">
-				Moradia estudantil próxima ao Campus do Vale (UFRGS)
-			</p>
-			<p>
-				Apartamentos, JKs, Quartos e Kitnets semi-mobiliados com internet Wi-Fi,
-				lavanderia e ampla área de convivência.
-			</p>
-		</div>
-	</section>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb" alt="Apartamento 2">
+                <h3>Kitnet Completa</h3>
+                <p>Com cozinha equipada e internet inclusa.</p>
+            </div>
 
-	<!-- ACOMODAÇÕES -->
-	<section id="acomodacoes" class="wrapper style2">
-		<div class="title">Nossas Acomodações</div>
-		<div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858" alt="Apartamento 3">
+                <h3>Studio Premium</h3>
+                <p>Ambiente moderno e confortável.</p>
+            </div>
+        </div>
+    </section>
 
-			<div class="cards">
+    <!-- ===== CONTATO ===== -->
+    <section style="background:#f4f4f4;">
+        <h2>Entre em Contato</h2>
+        <p>Quer agendar uma visita? Fale conosco pelo WhatsApp.</p>
+        <a href="https://wa.me/5551999999999" class="btn">Chamar no WhatsApp</a>
+    </section>
 
-				<div class="card">
-					<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80">
-					<h3>Apartamentos</h3>
-					<a href="./fotos/ap1.html">Ver Fotos</a>
-				</div>
-
-				<div class="card">
-					<img src="https://images.unsplash.com/photo-1582582429416-95f1d0f2c16b?auto=format&fit=crop&w=800&q=80">
-					<h3>JK's</h3>
-					<a href="./fotos/jk1.html">Ver Fotos</a>
-				</div>
-
-				<div class="card">
-					<img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80">
-					<h3>Quartos</h3>
-					<a href="./fotos/quarto1.html">Ver Fotos</a>
-				</div>
-
-				<div class="card">
-					<img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80">
-					<h3>Kitnets</h3>
-					<a href="./fotos/kitnet1.html">Ver Fotos</a>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- DIFERENCIAIS -->
-	<section class="wrapper style3">
-		<div class="title">Diferenciais</div>
-		<div class="container">
-			<ul>
-				<li>✔ Internet Wi-Fi inclusa</li>
-				<li>✔ Lavanderia compartilhada</li>
-				<li>✔ Área verde arborizada</li>
-				<li>✔ Próximo ao Campus do Vale (UFRGS)</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- CONTATO -->
-	<section id="contato" class="wrapper style1">
-		<div class="title">Consulte disponibilidade</div>
-		<div class="container">
-			<h2>Ficou interessado(a)?</h2>
-			<p>Entre em contato pelo WhatsApp:</p>
-
-			<ul class="actions">
-				<li>
-					<a href="https://api.whatsapp.com/send?phone=555134449849&text=Olá,%20gostaria%20de%20mais%20informações."
-					   target="_blank"
-					   class="button style3 large">
-					   Chamar no WhatsApp
-					</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- FOOTER -->
-	<section id="footer" class="wrapper">
-		<div class="container">
-			<p>&copy; 2025 Jk Universitário - Todos os direitos reservados.</p>
-		</div>
-	</section>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>&copy; 2026 Jk Universitário - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
